@@ -12,13 +12,13 @@ Le site officiel https://formation-photo.ma/ n'a pas pu être consulté : le pro
 
 La photo de couverture est une photographie d'ambiance externe Unsplash (photo-1452780212940-6f5c0d14d848), clairement légendée ; ce n'est pas une réalisation d'élève. Son chargement et ses droits d'utilisation sont à vérifier avant publication. Pour supprimer toute dépendance externe, remplacer l'URL dans index.html par votre fichier local autorisé assets/hero.webp, créer des variantes de largeur 640/1000/1400 et ajouter srcset/sizes. Préférer une photo authentique de cours ou de terrain en format vertical. Aucun visuel généré n'a été employé.
 
-Les trois blocs de galerie et les deux témoignages sont des espaces réservés explicitement identifiés. Remplacer uniquement avec de vrais travaux et avis autorisés. Les blocs vidéo ne sont volontairement pas de faux lecteurs. Ajouter une vraie vidéo avec controls, poster et sous-titres une fois disponible. Ne pas inventer de date de session, d'adresse ou de preuve sociale. La mention « places limitées » est celle du brief ; confirmer sa pertinence avant lancement.
+La galerie d’élèves a été retirée à la demande du propriétaire, qui ne dispose pas de ces images. Elle est remplacée par les acquis : appareil, lumière et composition. Deux courts extraits de témoignages réels (Mounir El Himdy et Fouad Bendi) proviennent de https://photo-academy.ma/, retrouvé via son indexation le 22 octobre 2026. Le second est explicitement marqué comme extrait ; aucune photo ni note inventée. La vidéo officielle reste à intégrer lorsque son URL sera fournie : aucun faux lecteur n’est affiché. La charte du site photo-academy.ma reste à vérifier visuellement : les tentatives d’accès direct échouent. Ne pas considérer la palette actuelle comme validée par le propriétaire. Ne pas inventer de date de session, d'adresse ou de preuve sociale. La mention « places limitées » est celle du brief ; confirmer sa pertinence avant lancement.
 
 ## Modifier
 
 - Textes, CTA, programme, FAQ : index.html. Les CTA ciblent tous #inscription.
 - Identité : variables --paper, --ink, --accent, --muted dans assets/style.css.
-- Photographies : remplacer les figures .placeholder par des images avec alt pertinent, width/height, loading="lazy" et légende auteur. Conserver les mentions réservées tant que les contenus manquent.
+- Photographies : la page ne demande aucune photo d’élève. La couverture reste une photo d’ambiance distincte. Pour la vidéo officielle, obtenir son lien exact avant d’intégrer un lecteur accessible avec sous-titres.
 - Comportement et messages : assets/app.js.
 - Collecte statique : config.js, endpoint HTTPS + privacyUrl. Aucun secret côté navigateur.
 
