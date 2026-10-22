@@ -2,6 +2,18 @@
   'use strict';
   const root = document.querySelector('#photo-academy');
   if (!root) return;
+  const videoButton = root.querySelector('.video-launch');
+  if (videoButton) videoButton.addEventListener('click', () => {
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube-nocookie.com/embed/XqOw3kKM_V4?rel=0';
+    iframe.title = 'Vidéo de Photo Academy';
+    iframe.allow = 'encrypted-media; picture-in-picture; fullscreen';
+    iframe.allowFullscreen = true;
+    iframe.referrerPolicy = 'strict-origin-when-cross-origin';
+    iframe.tabIndex = 0;
+    root.querySelector('#academy-player').replaceChildren(iframe);
+    iframe.focus();
+  }, {once: true});
   const config = window.PHOTO_ACADEMY_CONFIG || {};
   const form = root.querySelector('#lead-form');
   const status = root.querySelector('#form-status');
